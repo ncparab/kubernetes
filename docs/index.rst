@@ -2,10 +2,9 @@
 Kubernetes@Exeliq
 ######################
 
-
 .. image:: download1.PNG
-  :width: 700px
-  :height: 500px
+  :width: 600px
+  :height: 400px
   :alt: alternate text
 
 Introduction
@@ -31,3 +30,7 @@ At the end of this course, you will be able to:
 
 - Deploy a multi-component software application efficiently and easily
 
+.. toctree::
+   :maxdepth: 2
+
+   Curriculum
