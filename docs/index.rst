@@ -5,7 +5,7 @@ Kubernetes@Exeliq
 .. image:: download1.PNG
   :width: 600px
   :height: 400px
-  :alt: alternate text
+ 
 
 Introduction
 -------------
