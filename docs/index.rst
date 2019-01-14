@@ -6,8 +6,8 @@ Introduction
 -------------
 
 .. image:: download1.PNG
-  :width: 600px
-  :height: 400px
+  :width: 800px
+  :height: 700px
 
 Kubernetes is a powerful open-source system, initially developed by Google, for managing containerized applications in a clustered environment. It aims to provide better ways of managing related, distributed components and services across varied infrastructure.
 
