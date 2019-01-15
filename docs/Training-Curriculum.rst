@@ -121,6 +121,58 @@ Week - I
 |         |                                                             |             |
 +---------+-------------------------------------------------------------+-------------+
 
+Week - II
+----------
 
+1.History of Orch tools  
+========================
 
+2.Kubernetes architecture
+===========================
 
+- Minukube arch
+- Self hosted arch
+- Kops
+- Kubadm
+- Aks
+- Eks
+
+3.Kube componenets
+===================
+
+- Control plance
+- Kube api server
+- Kuber controller manager
+- Kube scheduler
+- Etcd
+- Load balancer
+- Worker plane 
+- Kubelet
+- Kube proxy
+
+4.Kubernetes concepts:
+=======================
+
+- Pods 
+- Namepspaces
+- Rs, rc
+- Deployments
+- Services
+- Labels
+- Volumes
+- Hpa
+- Daemonsets
+
+5.Kube cli – 
+=============
+
+- Kubectl
+- kops
+
+6.Kube setup for developers
+
+- Dev Mode
+   i)Minikube installation
+   ''''''''''''''''''''''''
+     a)Establishing architecture
+     b)Developing a microservice
