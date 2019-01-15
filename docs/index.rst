@@ -28,4 +28,4 @@ At the end of this course, you will be able to:
 .. toctree::
    :maxdepth: 2
 
-   Curriculum
+   Training-Curriculum
