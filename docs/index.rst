@@ -1,5 +1,5 @@
 ######################
-Kubernetes@Exeliq
+Kubernetes
 ######################
 
 Introduction
