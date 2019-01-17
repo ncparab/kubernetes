@@ -62,7 +62,7 @@ Running an operating system and application in an encapsulated virtual machine o
 - Blending of storage IO – Blender effect
 - Complexity in troubleshooting – performance issues – you have to install full operating system to launch an application.
 
-2. Evolution of containers 
+2. Evolution of containers   
 ----------------------------
 
 In contrast with virtual machines, Containers doesn’t need an operating system within the container and still can run your application.
