@@ -87,9 +87,10 @@ Containers are created through Linux kernel features esp. **namespaces** and **c
 """""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: containervsVm.png
-   :width: 600px
-   :height: 400px
+   :width: 800px
+   :height: 500px
    :alt: alternate text
+
 
 2.3 Centralized containerization vs Distributed containerization
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
