@@ -62,12 +62,20 @@ Running an operating system and application in an encapsulated virtual machine o
 - Blending of storage IO – Blender effect
 - Complexity in troubleshooting – performance issues – you have to install full operating system to launch an application.
 
-2. Evolution of containers   
-----------------------------
+2. Introduction to containers   
+-------------------------------
 
-In contrast with virtual machines, Containers doesn’t need an operating system within the container and still can run your application.
+Containers, or otherwise known as operating-system-level virtualization, are a lightweight approach to virtualization that only provides the bare minimum that an application requires to run and function as intended. In a way, they can be considered as super minimalist virtual machines that are not running on a hypervisor. Items usually bundled into a container include:
 
-How? -  Containers isolate application at OS-layer. Containers are still encapsulation of application along with app binaries in absence of OS which means that containers are always constrained to running the same kernel as the host.. like a VM, a container holds an isolated instance of an operating system (OS), which we can use to run applications.
+- Application
+- Dependencies
+- Libraries
+- Binaries
+- Configuration files
+
+Containerizing an application enables it to run reliably in different environments by abstracting away the operating system and the physical infrastructure. Containerized applications are sharing the kernel of the host operating system with other containers and the shared part of the OS is read only. Inside a container, there is often a single executable service or microservice.
+
+The size of the containers is usually measured in tens of megabytes and it only takes 1–2 seconds to provision one. When the load is increasing new containers can be created and when the load drops containers can be destroyed. When containers need to be updated you only need to modify the configuration file and then create new containers and destroy the old ones.
 
 2.1 Virtual machines	Vs Containers
 """""""""""""""""""""""""""""""""""
@@ -75,13 +83,18 @@ How? -  Containers isolate application at OS-layer. Containers are still encapsu
 Both VMs and containers can be used to isolate applications from other applications running on the same host. VMs have an added degree of isolation from the hypervisor, where as containers are seemed to be itself as a process at the host OS point of view. The container engine is responsible for starting and stopping containers in a similar way to the hypervisor on a VM.
 Containers are created through Linux kernel features esp. **namespaces** and **cgroups**. 
 
-2.2 Namespaces 
-"""""""""""""""
+2.2 Virtualizion vs Containerized Architecture
+"""""""""""""""""""""""""""""""""""""""""""""""
 
-It provide logical partitions of certain kinds of system resources such as mount(mnt), process(pid), network(net) etc. containers does belong to one  of each  namespace. 
+.. image:: containervsVm.png
+   :width: 600px
+   :height: 400px
+   :alt: alternate text
 
-2.3 Dockers 
-""""""""""""
+2.3 Centralized containerization vs Distributed containerization
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Docker took the existing Linux container technology and wrapped and extended it in various ways—primarily through portable images and a user-friendly interface—to create a complete solution for the creation and distribution of containers. 
+Application/Centralized containerization is an OS-level virtualization method used to deploy and run distributed applications without launching an entire virtual machine (VM) for each app. Multiple isolated applications or services run on a single host and access the same OS kernel. 
+
+And opposite to this in Distributed containerization the applications from different containers communicating to each other.
 
