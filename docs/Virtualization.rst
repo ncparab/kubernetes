@@ -86,9 +86,9 @@ Containers are created through Linux kernel features esp. **namespaces** and **c
 2.2 Virtualizion vs Containerized Architecture
 """""""""""""""""""""""""""""""""""""""""""""""
 
-.. image:: containervsVm.png
-   :width: 800px
-   :height: 500px
+.. image:: download.png
+   :width: 600px
+   :height: 400px
    :alt: alternate text
 
 
