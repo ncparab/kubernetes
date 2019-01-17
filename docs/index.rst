@@ -29,3 +29,5 @@ At the end of this course, you will be able to:
    :maxdepth: 2
 
    Training-Curriculum
+   Getting-Started
+   virtualization
