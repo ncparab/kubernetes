@@ -14,8 +14,6 @@ Week - I
 |         | Introduction to Containers                                  |             |
 +         +-------------------------------------------------------------+             +
 |         | Virtualizion vs Containerized Architecture                  |             |
-+         +-------------------------------------------------------------+             +
-|         | Container Concepts                                          |             |
 +         +-------------------------------------------------------------+             |
 |         | Centralized containerization vs Distributed containerization|             |
 +---------+-------------------------------------------------------------+-------------+  
