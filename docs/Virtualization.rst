@@ -87,8 +87,8 @@ Containers are created through Linux kernel features esp. **namespaces** and **c
 """""""""""""""""""""""""""""""""""""""""""""""
 
 .. image:: download.png
-   :width: 800px
-   :height: 600px
+   :width: 600px
+   :height: 400px
    :alt: alternate text
 
 
