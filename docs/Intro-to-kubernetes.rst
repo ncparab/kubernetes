@@ -67,9 +67,9 @@ While Kubernetes is meant for a distributed cluster of nodes, minikube lets you 
 
 Once the minikube  is launched , you should see that a virtual machine will be active on your physical machine. When you use minikube (i.e. a one node cluster virtual machine), the architecture looks something like the diagram below. Minikube in absence of load balancer does not provide reliability of distributed kubernetes cluster.
 
-.. image:: Picture1.PNG
-   :width: 500px
-   :height: 300px
+.. image:: 11.png
+   :width: 600px
+   :height: 400px
    :alt: alternate text
    
   
@@ -89,16 +89,16 @@ Runs multiple controllers that are responsible for the health of the cluster, re
 
 Runs the Kubernetes agent that is responsible for running Pod containers via Docker or rkt, requests secrets or configurations, mounts required Pod volumes, does health checks and reports the status of Pods and the node to the rest of the system.
 
-.. image:: Picture2.PNG
-   :width: 500px
-   :height: 300px
+.. image:: 12.PNG
+   :width: 600px
+   :height: 400px
    :alt: alternate text
   
 The following diagram illustrated two master – two node kubernetes cluster architecture. We  interact and manage kubernets cluster with kubectl – a command line tool used to interact with the kubernetes API and manage kubernetes objects such as pods, services, replica sets, replication controllers etc.,  
 
-.. image:: Picture3.PNG
-   :width: 500px
-   :height: 300px
+.. image:: 13.PNG
+   :width: 600px
+   :height: 400px
    :alt: alternate text
   
 The above diagram, consists of  kubernetes components which we will explain in the later section.
