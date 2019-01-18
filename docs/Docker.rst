@@ -71,7 +71,7 @@ Install docker with below command
    :height: 400px
    :alt: alternate text
    
-- Step 2:-
+Step 2:-
 '''''''''''
 
 After, Docker package has been installed, start the daemon, check its status and enable it system wide using the below commands:
