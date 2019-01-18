@@ -64,8 +64,8 @@ Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
     $ docker tag  8c568f104326 fedora
     
 .. image:: d4.PNG
-   :width: 600px
-   :height: 100px
+   :width: 800px
+   :height: 200px
    :alt: alternate text
    
 5) docker run
@@ -129,5 +129,5 @@ Docker commit command allows users to take a running container and save its curr
     
 .. image:: d8.PNG
    :width: 800px
-   :height: 200px
+   :height: 100px
    :alt: alternate text
