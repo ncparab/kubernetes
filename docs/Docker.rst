@@ -54,8 +54,59 @@ The Docker daemon (dockerd) listens for Docker API requests and manages Docker o
 
 The Docker client (docker) is the primary way that many Docker users interact with Docker. When you use commands such as docker run, the client sends these commands to dockerd, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.
 
+4. Installation of Docker 
+--------------------------
 
+Step 1:-
+''''''''
 
+Install docker with below command
+
+.. code-block:: bash
+
+   $ yum install docker
+
+.. image:: docker-install.PNG
+   :width: 600px
+   :height: 400px
+   :alt: alternate text
+   
+- Step 2:-
+
+After, Docker package has been installed, start the daemon, check its status and enable it system wide using the below commands:
+
+.. code-block:: bash
+
+   $ systemctl start docker 
+   $ systemctl status docker
+   $ systemctl enable docker
+   
+OR
+
+.. code-block:: bash
+
+  $ service docker start
+  $ service docker status
+  $ chkconfig docker on
+  
+.. image:: startdocker.PNG
+   :width: 600px
+   :height: 400px
+   :alt: alternate text
+   
+- Step 3:- 
+
+Check the docker version
+
+.. code-block:: bash
+
+   $ docker viersion
+   
+.. image:: dockerversion.PNG
+   :width: 600px
+   :height: 400px
+   :alt: alternate text
+   
 
 
 
