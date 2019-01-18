@@ -31,3 +31,5 @@ At the end of this course, you will be able to:
    Training-Curriculum
    Getting-Started
    Virtualization
+   Docker
+   Docker-Commands-I
