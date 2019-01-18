@@ -72,6 +72,7 @@ Install docker with below command
    :alt: alternate text
    
 - Step 2:-
+'''''''''''
 
 After, Docker package has been installed, start the daemon, check its status and enable it system wide using the below commands:
 
