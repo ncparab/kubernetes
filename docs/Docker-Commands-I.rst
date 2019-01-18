@@ -106,7 +106,7 @@ Use docker attach to attach your terminal's standard input, output, and error (o
     
 .. image:: d7.PNG
    :width: 800px
-   :height: 200px
+   :height: 100px
    :alt: alternate text
    
 8) docker detach
