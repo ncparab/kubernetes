@@ -67,7 +67,7 @@ While Kubernetes is meant for a distributed cluster of nodes, minikube lets you 
 
 Once the minikube  is launched , you should see that a virtual machine will be active on your physical machine. When you use minikube (i.e. a one node cluster virtual machine), the architecture looks something like the diagram below. Minikube in absence of load balancer does not provide reliability of distributed kubernetes cluster.
 
-.. image:: 11.png
+.. image:: 11.PNG
    :width: 600px
    :height: 400px
    :alt: alternate text
