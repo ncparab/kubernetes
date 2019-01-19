@@ -36,6 +36,11 @@ below once the cluster is up and running.
    :width: 800px
    :length: 200px
    :alt: alternate text
+   
+.. image:: architecture.PNG
+   :width: 600px
+   :height: 400px
+   :alt: alternate text
 
 you can check the cluster Info as well once the Kubernetes cluster is up and running as shown
 
