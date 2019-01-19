@@ -17,7 +17,7 @@ This command creates a new volume that containers can consume and store data in.
    
 .. image:: d9.PNG
    :width: 800px
-   :height: 200px
+   :height: 300px
    :alt: alternate text
    
 2) docker inspect 
@@ -47,7 +47,7 @@ This command will show history of an image.
 
 .. image:: d11.PNG
    :width: 800px
-   :height: 200px
+   :height: 100px
    :alt: alternate text
    
 4) docker save
@@ -61,7 +61,7 @@ Save one or more images to a tar archive (streamed to STDOUT by default)
    
 .. image:: d12.PNG
    :width: 800px
-   :height: 300px
+   :height: 200px
    :alt: alternate text
    
 5) docker load 
@@ -131,7 +131,7 @@ This will push an image or a repository to a docker registry
    
 .. image:: d17.PNG
    :width: 800px
-   :height: 100px
+   :height: 200px
    :alt: alternate text
   
 10) docker rm
@@ -174,7 +174,7 @@ This will start/stop one or more stopped/started containers
    $ docker stop <container name>
       
 .. image:: d18.PNG
-   :width: 1200px
+   :width: 1000px
    :height: 100px
    :alt: alternate text
 
@@ -231,7 +231,7 @@ This will manage all docker network
    
 .. image:: d23.PNG
    :width: 1000px
-   :height: 200px
+   :height: 100px
    :alt: alternate text
    
      
