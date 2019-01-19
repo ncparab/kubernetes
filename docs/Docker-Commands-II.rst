@@ -61,7 +61,7 @@ Save one or more images to a tar archive (streamed to STDOUT by default)
    
 .. image:: d12.PNG
    :width: 800px
-   :height: 200px
+   :height: 300px
    :alt: alternate text
    
 5) docker load 
@@ -174,7 +174,7 @@ This will start/stop one or more stopped/started containers
    $ docker stop <container name>
       
 .. image:: d18.PNG
-   :width: 800px
+   :width: 1000px
    :height: 100px
    :alt: alternate text
 
@@ -230,7 +230,7 @@ This will manage all docker network
    $ docker network ls
    
 .. image:: d23.PNG
-   :width: 800px
+   :width: 1000px
    :height: 200px
    :alt: alternate text
    
