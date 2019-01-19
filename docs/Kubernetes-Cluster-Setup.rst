@@ -32,11 +32,7 @@ Start the minikube cluster by executing the command
 Kubernetes v1.10.0 is being launched by minikube.  Check whether the Kubernetes daemons such as controller, etcd are running as shown 
 below once the cluster is up and running.
 
-.. image:: k1.png
-   :width: 800px
-   :length: 200px
-   :alt: alternate text
-   
+
 .. image:: k1.PNG
    :width: 600px
    :height: 400px
@@ -44,9 +40,9 @@ below once the cluster is up and running.
 
 you can check the cluster Info as well once the Kubernetes cluster is up and running as shown
 
-.. image:: k2.png
-   :width: 800px
-   :length: 200px
+.. image:: k2.PNG
+   :width: 600px
+   :height: 400px
    :alt: alternate text
 
 a) Establishing architecture
