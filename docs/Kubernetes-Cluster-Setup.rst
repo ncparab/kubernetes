@@ -151,6 +151,7 @@ of components you can create in Kubernetes yet, you’ll use a simple one-line c
    :width: 800px
    :height: 400px
    :alt: alternate text
+   
 Push the image to the Registry service. While choosing the Registry, you can use your local Registry(within minikube) or DockerHub 
 registry.
 
