@@ -37,7 +37,7 @@ below once the cluster is up and running.
    :length: 200px
    :alt: alternate text
    
-.. image:: architecture.PNG
+.. image:: k1.PNG
    :width: 600px
    :height: 400px
    :alt: alternate text
