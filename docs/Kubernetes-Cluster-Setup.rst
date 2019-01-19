@@ -34,15 +34,15 @@ below once the cluster is up and running.
 
 
 .. image:: k1.PNG
-   :width: 600px
-   :height: 400px
+   :width: 800px
+   :height: 200px
    :alt: alternate text
 
 you can check the cluster Info as well once the Kubernetes cluster is up and running as shown
 
 .. image:: k2.PNG
-   :width: 600px
-   :height: 400px
+   :width: 800px
+   :height: 200px
    :alt: alternate text
 
 a) Establishing architecture
@@ -62,16 +62,16 @@ the following commands within minikube
    $ eval $(minikube docker-env)
    $ docker run -d -p 5000:5000 --restart=always --name dockreg registry:2
 
-.. image:: k3.png
+.. image:: k3.PNG
    :width: 800px
-   :length: 200px
+   :height: 300px
    :alt: alternate text
    
 docker ps command will show you  the registry in running as a container. 
 
-.. image:: k4.png
+.. image:: k4.PNG
    :width: 800px
-   :length: 100px
+   :height: 100px
    :alt: alternate text
 
 The registry is now ready to use. Kubernetes will pull images from here once the image is pushed. 
@@ -125,9 +125,9 @@ Following command pushes our flaskapp to local registry.
 
    $ docker push localhost:5000/flaskapp:latest
    
-.. image:: k5.png
+.. image:: k5.PNG
    :width: 800px
-   :length: 200px
+   :height: 200px
    :alt: alternate text
 
 Now incase you want to push images to DockerHub Registry, A Kubernetes cluster uses the Secret of docker-registry type to authenticate 
@@ -147,17 +147,16 @@ of components you can create in Kubernetes yet, you’ll use a simple one-line c
 
 - build your first flask “app.py” image 
 
-.. image:: k6.png
+.. image:: k6.PNG
    :width: 800px
-   :length: 500px
+   :height: 400px
    :alt: alternate text
-
 Push the image to the Registry service. While choosing the Registry, you can use your local Registry(within minikube) or DockerHub 
 registry.
 
-.. image:: k7.png
+.. image:: k7.PNG
    :width: 800px
-   :length: 200px
+   :height: 200px
    :alt: alternate text
 
 Once the image is pushed, it’ll be used When Kubernetes runs docker pull inside minikube to launch or deploy pods to run the application
@@ -184,14 +183,14 @@ scheduling unit.
 The --image=localhost:5000/flaskapp part obviously specifies the container image you want to run, and the --port=8080 option tells 
 Kubernetes that your app is listening on port 8080.
 
-.. image:: k8.png
+.. image:: k8.PNG
    :width: 800px
-   :length: 100px
+   :height: 100px
    :alt: alternate text
    
-.. image:: k9.png
+.. image:: k9.PNG
    :width: 800px
-   :length: 100px
+   :height: 100px
    :alt: alternate text
 
 d) Exposing a microservice
@@ -203,17 +202,17 @@ aware of that or keep track of the list of backends themselves.
 
 To create the service, you’ll tell Kubernetes to expose the  deployment as shown below: We expose our flaskapp.
 
-.. image:: k10.png
+.. image:: k10.PNG
    :width: 800px
-   :length: 100px
+   :height: 100px
    :alt: alternate text
 
 You can view the services by executing kubectl get services command.
 
-.. image:: k11.png
+.. image:: k11.PNG
    :width: 800px
-   :length: 200px
-   :alt: alternate text
+   :height: 200px
+   :alt: alternate textt
 
 You can now send requests to your pod through the service’s external IP and port. When using Minikube, you can get the IP and port 
 through which you can access the service by running 
@@ -242,14 +241,14 @@ Your Kubectl version should be >1.4 for reviewing hpa.
 
 Enable metrics-service addon - 
 
-.. image:: k12.png
+.. image:: k12.PNG
    :width: 800px
-   :length: 500px
+   :height: 500px
    :alt: alternate text
-
-.. image:: k13.png
+   
+.. image:: k13.PNG
    :width: 800px
-   :length: 200px
+   :height: 200px
    :alt: alternate text
    
 2) Performance testing on kubernetes cluster
@@ -265,9 +264,9 @@ running define horizontal pod autoscaling for your deployment.
 
   $ kubectl autoscale deployment flaskapp --cpu-percent=50 --min=1 --max=3 
 
-.. image:: k14.png
+.. image:: k14.PNG
    :width: 800px
-   :length: 200px
+   :height: 200px
    :alt: alternate text
 
 b) Setting up test plan in Jmeter
@@ -277,23 +276,23 @@ b) Setting up test plan in Jmeter
 
 ThreadGroup - No.of Threads, Ramp-up period(in sec),loop count
 
-.. image:: k15.png
+.. image:: k15.PNG
    :width: 800px
-   :length: 400px
+   :height: 400px
    :alt: alternate text
 
 3.Populate the HTTP Request defaults with name/ip , and Port of the target server 
 
-.. image:: k16.png
+.. image:: k16.PNG
    :width: 800px
-   :length: 400px
+   :height: 400px
    :alt: alternate text
 
 4.Execute the Test plan. Once the Load Test started, you’d be able to view the results in “view results in table”.
 
-.. image:: k17.png
+.. image:: k17.PNG
    :width: 800px
-   :length: 400px
+   :height: 400px
    :alt: alternate text
 
 Meanwhile in Kubernetes check  the CPU Resource utilization, and no.of pods running as per the LOAD.
