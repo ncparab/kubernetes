@@ -45,7 +45,7 @@ you can check the cluster Info as well once the Kubernetes cluster is up and run
    :alt: alternate text
 
 a) Establishing architecture
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Docker is a platform for packaging, distributing, and running applications. The Building Blocks of Docker are Images, Registries and 
 containers . With minikube comes in-built docker daemon, we will dockerize our applications and let minikube run/manage our applications.
