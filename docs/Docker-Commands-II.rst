@@ -174,7 +174,7 @@ This will start/stop one or more stopped/started containers
    $ docker stop <container name>
       
 .. image:: d18.PNG
-   :width: 1000px
+   :width: 1200px
    :height: 100px
    :alt: alternate text
 
@@ -216,7 +216,7 @@ This will inspect changes to files or directories on a container's filesystem
    $ docker logs <container name>
    
 .. image:: d22.PNG
-   :width: 800px
+   :width: 1000px
    :height: 100px
    :alt: alternate text
    
