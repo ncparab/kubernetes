@@ -73,21 +73,17 @@ Week - I
 +         +                                                             +             +
 |         | 10) docker pull                                             |             |
 +         +                                                             +             +
-|         | 11) docker rm                                               |             |
+|         | 11) docker rmi                                              |             |
 +         +                                                             +             +
-|         | 12) docker rmi                                              |             |
+|         | 12) docker start/stop                                       |             |
 +         +                                                             +             +
-|         | 13) docker prune                                            |             |
+|         | 13) docker stats                                            |             |
 +         +                                                             +             +
-|         | 14) docker start/stop                                       |             |
+|         | 14) docker log                                              |             |
 +         +                                                             +             +
-|         | 15) docker stats                                            |             |
+|         | 15) docker diff                                             |             |
 +         +                                                             +             +
-|         | 16) docker log                                              |             |
-+         +                                                             +             +
-|         | 17) docker diff                                             |             |
-+         +                                                             +             +
-|         | 18) docker network                                          |             |
+|         | 16) docker network                                          |             |
 +---------+-------------------------------------------------------------+-------------+
 | Day 5   | Docker networking                                           | 3 Hrs       |
 +         +-------------------------------------------------------------+             +
