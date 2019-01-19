@@ -32,14 +32,14 @@ Start the minikube cluster by executing the command
 Kubernetes v1.10.0 is being launched by minikube.  Check whether the Kubernetes daemons such as controller, etcd are running as shown 
 below once the cluster is up and running.
 
-.. image:: k1.PNG
+.. image:: k1.png
    :width: 800px
    :length: 200px
    :alt: alternate text
 
 you can check the cluster Info as well once the Kubernetes cluster is up and running as shown
 
-.. image:: k2.PNG
+.. image:: k2.png
    :width: 800px
    :length: 200px
    :alt: alternate text
@@ -61,14 +61,14 @@ the following commands within minikube
    $ eval $(minikube docker-env)
    $ docker run -d -p 5000:5000 --restart=always --name dockreg registry:2
 
-.. image:: k3.PNG
+.. image:: k3.png
    :width: 800px
    :length: 200px
    :alt: alternate text
    
 docker ps command will show you  the registry in running as a container. 
 
-.. image:: k4.PNG
+.. image:: k4.png
    :width: 800px
    :length: 100px
    :alt: alternate text
@@ -124,7 +124,7 @@ Following command pushes our flaskapp to local registry.
 
    $ docker push localhost:5000/flaskapp:latest
    
-.. image:: k5.PNG
+.. image:: k5.png
    :width: 800px
    :length: 200px
    :alt: alternate text
@@ -146,7 +146,7 @@ of components you can create in Kubernetes yet, you’ll use a simple one-line c
 
 - build your first flask “app.py” image 
 
-.. image:: k6.PNG
+.. image:: k6.png
    :width: 800px
    :length: 500px
    :alt: alternate text
@@ -154,7 +154,7 @@ of components you can create in Kubernetes yet, you’ll use a simple one-line c
 Push the image to the Registry service. While choosing the Registry, you can use your local Registry(within minikube) or DockerHub 
 registry.
 
-.. image:: k7.PNG
+.. image:: k7.png
    :width: 800px
    :length: 200px
    :alt: alternate text
@@ -183,12 +183,12 @@ scheduling unit.
 The --image=localhost:5000/flaskapp part obviously specifies the container image you want to run, and the --port=8080 option tells 
 Kubernetes that your app is listening on port 8080.
 
-.. image:: k8.PNG
+.. image:: k8.png
    :width: 800px
    :length: 100px
    :alt: alternate text
    
-.. image:: k9.PNG
+.. image:: k9.png
    :width: 800px
    :length: 100px
    :alt: alternate text
@@ -202,14 +202,14 @@ aware of that or keep track of the list of backends themselves.
 
 To create the service, you’ll tell Kubernetes to expose the  deployment as shown below: We expose our flaskapp.
 
-.. image:: k10.PNG
+.. image:: k10.png
    :width: 800px
    :length: 100px
    :alt: alternate text
 
 You can view the services by executing kubectl get services command.
 
-.. image:: k11.PNG
+.. image:: k11.png
    :width: 800px
    :length: 200px
    :alt: alternate text
@@ -241,12 +241,12 @@ Your Kubectl version should be >1.4 for reviewing hpa.
 
 Enable metrics-service addon - 
 
-.. image:: k12.PNG
+.. image:: k12.png
    :width: 800px
    :length: 500px
    :alt: alternate text
 
-.. image:: k13.PNG
+.. image:: k13.png
    :width: 800px
    :length: 200px
    :alt: alternate text
@@ -264,7 +264,7 @@ running define horizontal pod autoscaling for your deployment.
 
   $ kubectl autoscale deployment flaskapp --cpu-percent=50 --min=1 --max=3 
 
-.. image:: k14.PNG
+.. image:: k14.png
    :width: 800px
    :length: 200px
    :alt: alternate text
@@ -276,21 +276,21 @@ b) Setting up test plan in Jmeter
 
 ThreadGroup - No.of Threads, Ramp-up period(in sec),loop count
 
-.. image:: k15.PNG
+.. image:: k15.png
    :width: 800px
    :length: 400px
    :alt: alternate text
 
 3.Populate the HTTP Request defaults with name/ip , and Port of the target server 
 
-.. image:: k16.PNG
+.. image:: k16.png
    :width: 800px
    :length: 400px
    :alt: alternate text
 
 4.Execute the Test plan. Once the Load Test started, you’d be able to view the results in “view results in table”.
 
-.. image:: k17.PNG
+.. image:: k17.png
    :width: 800px
    :length: 400px
    :alt: alternate text
@@ -321,7 +321,3 @@ again using CLI.
 
 7.   The above command runs the Parameterized Jmeter script, you defined in GUI  and Stores the Load test results in log.jtl within the 
 current directory.
-
-
-
-
