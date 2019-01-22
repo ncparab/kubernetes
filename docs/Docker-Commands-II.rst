@@ -123,10 +123,13 @@ This command will list the available containers
 9) docker push
 ===============
 
-This will push an image or a repository to a docker registry
+This will push an image or a repository to a docker registry.
+
+Log into the Docker Hub from the command line. Use below command to login
 
 .. code-block:: bash
   
+   $ docker login --username=yourhubusername --email=youremail@company.com
    $ docker push [Options] NAME[:TAG]
    
 .. image:: dockerpush.PNG
