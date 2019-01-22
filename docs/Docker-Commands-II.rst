@@ -117,7 +117,7 @@ This command will list the available containers
    
 .. image:: d16.PNG
    :width: 800px
-   :height: 100px
+   :height: 70px
    :alt: alternate text
    
 9) docker push
@@ -134,7 +134,7 @@ Log into the Docker Hub from the command line. Use below command to login
    
 .. image:: dockerpush.PNG
    :width: 800px
-   :height: 300px
+   :height: 200px
    :alt: alternate text
   
 10) docker rm
