@@ -17,7 +17,7 @@ This command creates a new volume that containers can consume and store data in.
    
 .. image:: dockervolume.PNG
    :width: 800px
-   :height: 400px
+   :height: 200px
    :alt: alternate text
    
 2) docker inspect 
