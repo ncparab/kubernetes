@@ -15,7 +15,7 @@ This command creates a new volume that containers can consume and store data in.
   
    $ docker volume create [OPTIONS] [VOLUME]
    
-.. image:: d9.PNG
+.. image:: dockervolume.PNG
    :width: 800px
    :height: 400px
    :alt: alternate text
@@ -31,9 +31,9 @@ container JSON for unspecified type. If a format is specified, the given templat
   
    $ docker inspect fedora
 
-.. image:: d10.PNG
+.. image:: dockerinspect.PNG
    :width: 800px
-   :height: 200px
+   :height: 400px
    :alt: alternate text
    
 3) docker history
@@ -47,7 +47,7 @@ This command will show history of an image.
 
 .. image:: d11.PNG
    :width: 800px
-   :height: 50px
+   :height: 100px
    :alt: alternate text
    
 4) docker save
@@ -129,7 +129,7 @@ This will push an image or a repository to a docker registry
   
    $ docker push [Options] NAME[:TAG]
    
-.. image:: d17.PNG
+.. image:: dockerpush.PNG
    :width: 800px
    :height: 300px
    :alt: alternate text
@@ -201,9 +201,9 @@ This will fetch the logs of a container
   
    $ docker logs <container name>
    
-.. image:: d21.PNG
+.. image:: dockerlogs.PNG
    :width: 800px
-   :height: 200px
+   :height: 500px
    :alt: alternate text
    
 15) docker diff
