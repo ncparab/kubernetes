@@ -92,4 +92,45 @@ Go the location of file and run following command
    :width: 800px
    :height: 100px
    :alt: alternate text 
+
+6) Dockerfile key instructions best practices
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Following are basic instructions:
+''''''''''''''''''''''''''''''''''
+
+- FROM 
+
+Every Dockerfile starts with FROM, with the introduction of multi-stage builds as of version 17.05, you can have more than one FROM instruction in one Dockerfile.
+
+- COPY vs ADD
+
+ These two are often confused, so I’ll explain the difference.
  
+- ENV 
+
+well, setting environment variables is pretty important. 
+
+- RUN
+
+let’s run commands.
+
+- VOLUME
+
+another source of confusion, what’s the difference between Dockerfile VOLUME and container volumes?
+
+- USER
+
+When root is too mainstream.
+
+- WORKDIR
+
+Set the working directory.
+
+- EXPOSE
+
+Get your ports right.
+
+- ONBUILD
+
+Give more flexibility to your team and clients.
