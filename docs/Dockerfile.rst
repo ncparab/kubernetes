@@ -66,17 +66,17 @@ Go the location of file and run following command
 
    $ docker build .
    
-.. image:: dfile1.PNG
+.. image:: dfile1.png
    :width: 800px
    :length: 400px
    :alt: alternate text
    
-.. image:: dfile2.PNG
+.. image:: dfile2.png
    :width: 800px
    :length: 400px
    :alt: alternate text
    
-.. image:: dfile3.PNG
+.. image:: dfile3.png
    :width: 800px
    :length: 400px
    :alt: alternate text
@@ -88,7 +88,7 @@ Go the location of file and run following command
 
    $ docker images
 
-.. image:: dfile4.PNG
+.. image:: dfile4.png
    :width: 800px
    :length: 200px
    :alt: alternate text   
