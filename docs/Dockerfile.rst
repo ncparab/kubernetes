@@ -66,19 +66,19 @@ Go the location of file and run following command
 
    $ docker build .
    
-.. image:: dfile1.png
+.. image:: dfile1.PNG
    :width: 800px
-   :length: 400px
+   :height: 400px
    :alt: alternate text
    
-.. image:: dfile2.png
+.. image:: dfile2.PNG
    :width: 800px
-   :length: 400px
+   :height: 400px
    :alt: alternate text
    
-.. image:: dfile3.png
+.. image:: dfile3.PNG
    :width: 800px
-   :length: 400px
+   :height: 200px
    :alt: alternate text
    
 5) List your images
@@ -88,8 +88,8 @@ Go the location of file and run following command
 
    $ docker images
 
-.. image:: dfile4.png
+.. image:: dfile.PNG
    :width: 800px
-   :length: 200px
-   :alt: alternate text   
+   :height: 100px
+   :alt: alternate text 
  
