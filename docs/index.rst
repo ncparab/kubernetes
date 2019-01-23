@@ -34,5 +34,6 @@ At the end of this course, you will be able to:
    Docker
    Docker-Commands-I
    Docker-Commands-II
+   Dockerfile
    Intro-to-kubernetes
    Kubernetes-Cluster-Setup
