@@ -88,7 +88,7 @@ Go the location of file and run following command
 
    $ docker images
 
-.. image:: dfile.PNG
+.. image:: dfile4.PNG
    :width: 800px
    :height: 100px
    :alt: alternate text 
