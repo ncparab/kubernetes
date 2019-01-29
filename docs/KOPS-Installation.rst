@@ -18,7 +18,7 @@ KOPS installation
 
 .. image:: kubeadm/kops1.PNG
    :width: 800px
-   :height: 200px
+   :height: 150px
    :alt: alternate text
 
 Create an AWS S3 bucket for kops to persist the cluster state:
@@ -91,7 +91,7 @@ Create deployment/run the Application specifying the image
 
 .. image:: kubeadm/kops9.PNG
    :width: 800px
-   :height: 500px
+   :height: 50px
    :alt: alternate text
    
 .. image:: kubeadm/kops10.PNG
@@ -103,7 +103,7 @@ Expose the deployment:
 
 .. image:: kubeadm/kops11.PNG
    :width: 800px
-   :height: 50px
+   :height: 500px
    :alt: alternate text
 
 .. code-block:: bash
