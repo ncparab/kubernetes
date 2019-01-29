@@ -62,7 +62,7 @@ Once installed you can check the version of the kubeadm installed by
 
 .. image:: kubeadm/kbe3.PNG
    :width: 800px
-   :height: 100px
+   :height: 40px
    :alt: alternate text
 
 Ensure all the Kubernetes control plane components are in running  status.
