@@ -33,6 +33,11 @@ Installing kubeadm on your hosts by(ubuntu):
 Installing kubeadm on your hosts by(Fedora):
 =============================================
 
+.. image:: kubeadm/kbe1.PNG
+   :width: 700px
+   :height: 300px
+   :alt: alternate text
+
 
 The command to initialize the control plane is $kubeadm init. You can pass parameters such as api server listening endpoint, pod network cidr and kubernetes version to be installed.
 Kubeadm allows you to create a control-plane node in phases.The init command executes the series of phases:
