@@ -34,13 +34,24 @@ Installing kubeadm on your hosts by(Fedora):
 =============================================
 
 .. image:: kubeadm/kbe1.PNG
-   :width: 700px
-   :height: 300px
+   :width: 800px
+   :height: 200px
    :alt: alternate text
 
 
-The command to initialize the control plane is $kubeadm init. You can pass parameters such as api server listening endpoint, pod network cidr and kubernetes version to be installed.
+The command to initialize the control plane is
+
+.. code-block:: bash
+
+   $ kubeadm init. 
+   
+You can pass parameters such as api server listening endpoint, pod network cidr and kubernetes version to be installed.
 Kubeadm allows you to create a control-plane node in phases.The init command executes the series of phases:
+
+.. image:: kubeadm/kbe2.PNG
+   :width: 800px
+   :height: 500px
+   :alt: alternate text
 
 
 Once installed you can check the version of the kubeadm installed by 
@@ -49,18 +60,24 @@ Once installed you can check the version of the kubeadm installed by
 
    $kubeadm version
 
+.. image:: kubeadm/kbe3.PNG
+   :width: 800px
+   :height: 50px
+   :alt: alternate text
 
 Ensure all the Kubernetes control plane components are in running  status.
 
-
+.. image:: kubeadm/kbe4.PNG
+   :width: 800px
+   :height: 200px
+   :alt: alternate text
 
 At this point you’ve kubernetes control plane components, but you can able to add worker nodes to this kubeadm cluster by,
 
 kubeadm join:
 ^^^^^^^^^^^^^^
 
-Joining your nodes:
-^^^^^^^^^^^^^^^^^^^
+- Joining your nodes:
 
 The nodes are where your workloads (containers and pods, etc) run. To add new nodes to your cluster do the following for each machine:
 
@@ -81,16 +98,23 @@ If you don’t have the value of --discovery-token-ca-cert-hash, you can get it 
    $ openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \
      openssl dgst -sha256 -hex | sed 's/^.* //'
 
+.. image:: kubeadm/kbe5.PNG
+   :width: 800px
+   :height: 100px
+   :alt: alternate text
 
 This is token-based discovery of the kubeadm master with CA pinning.
 
+.. image:: kubeadm/kbe6.PNG
+   :width: 800px
+   :height: 100px
+   :alt: alternate text
 
 The token outputted by kubeadm is valid for 23h. If expired you can generate another token by 
 
-
 .. code-block:: bash
 
-   $kubeadm token create
+   $ kubeadm token create
 
 You can get the existing token list by 
 
@@ -100,11 +124,18 @@ You can get the existing token list by
 
 Once the worker node is registered to the master, application deployments or pods can be deployed the same way we did in minikube. But if we want to consider the master node alone for the deployments as well, then that can be done by removing taints on the master node as shown:
 
-
+.. image:: kubeadm/kbe7.PNG
+   :width: 800px
+   :height: 100px
+   :alt: alternate text
 
 At this point, kubernetes would be abe to schedule the pods on the master node too. But if there is any error that is related to network plugin during the scheduling of pods for example as shown below, you would need to install CNI-plugin for pod/container communication.
 
-
+.. image:: kubeadm/kbe8.PNG
+   :width: 800px
+   :height: 100px
+   :alt: alternate text
+   
 You can install CNI-plugin such as Calico or weavenet here after to put forth the pod/container communication, which we’ll showcase in implementation of self-hosted kubernetes cluster.
 
 Install calic CNI plugin by:
@@ -113,12 +144,20 @@ Install calic CNI plugin by:
 .. code-block:: bash
 
    $ kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
-   $ kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
+   $ kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-        networking/1.7/calico.yaml
 
-Ensure the calico pods are running as expected:
+- Ensure the calico pods are running as expected:
+
+.. image:: kubeadm/kbe9.PNG
+   :width: 800px
+   :height: 200px
+   :alt: alternate text
 
 Now you can create a deployment, with the deployment descriptor or application YAML file and run it with kubectl command. Again Ensure the pod is in running state that is created by the deployment. 
 
-
+.. image:: kubeadm/kbe10.PNG
+   :width: 800px
+   :height: 100px
+   :alt: alternate text
 
 Now you can expose the deployment as of type NodePort so that the service available for the clients.
