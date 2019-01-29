@@ -62,7 +62,7 @@ Once installed you can check the version of the kubeadm installed by
 
 .. image:: kubeadm/kbe3.PNG
    :width: 800px
-   :height: 50px
+   :height: 100px
    :alt: alternate text
 
 Ensure all the Kubernetes control plane components are in running  status.
@@ -133,7 +133,7 @@ At this point, kubernetes would be abe to schedule the pods on the master node t
 
 .. image:: kubeadm/kbe8.PNG
    :width: 800px
-   :height: 100px
+   :height: 50px
    :alt: alternate text
    
 You can install CNI-plugin such as Calico or weavenet here after to put forth the pod/container communication, which we’ll showcase in implementation of self-hosted kubernetes cluster.
