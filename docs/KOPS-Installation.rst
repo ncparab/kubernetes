@@ -96,14 +96,14 @@ Create deployment/run the Application specifying the image
    
 .. image:: kubeadm/kops10.PNG
    :width: 800px
-   :height: 50px
+   :height: 500px
    :alt: alternate text
 
 Expose the deployment:
 
 .. image:: kubeadm/kops11.PNG
    :width: 800px
-   :height: 500px
+   :height: 50px
    :alt: alternate text
 
 .. code-block:: bash
