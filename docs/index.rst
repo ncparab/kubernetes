@@ -37,5 +37,6 @@ At the end of this course, you will be able to:
    Dockerfile
    Intro-to-kubernetes
    Kubernetes-Cluster-Setup
+   Kubernetes-OnPremise
    KOPS-Installation
    KUBEADM-Installation
