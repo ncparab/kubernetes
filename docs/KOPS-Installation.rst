@@ -158,7 +158,7 @@ Ex: $docker tag de52b31bd609 exeliq/flaskapp:latest
 
 .. image:: kubeadm/kops16.PNG
    :width: 800px
-   :height: 70px
+   :height: 50px
    :alt: alternate text
 
 5)CREATING A SERVICE THROUGH A YAML DESCRIPTOR
@@ -289,30 +289,8 @@ Access your service that is deployed in kubernetes KOPS cluster with the externa
 .. code-block:: bash
 
    $ kubectl get endpoints flask
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-To delete KOPS installation of Kubernetes Cluster :
+   
+14)To delete KOPS installation of Kubernetes Cluster :
 
 .. code-block:: bash
 
