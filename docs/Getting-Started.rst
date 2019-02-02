@@ -16,5 +16,5 @@ You will understand the open source orchestration system for container-based dis
 
 .. image:: kubeadm/kubenetes.PNG
    :width: 800px
-   :length: 400px
+   :height: 400px
    :alt: alternate text
