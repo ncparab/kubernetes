@@ -3,7 +3,7 @@ Docker Commands - II
 #####################
 
 
-Followings are widely used docker commands
+Most widely used docker commands
 -------------------------------------------
 
 1) docker volume
