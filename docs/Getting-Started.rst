@@ -14,7 +14,7 @@ The course will help you learn components in the Kubernetes architecture and use
 You will understand the open source orchestration system for container-based distributed applications. It will trace the history of Kubernetes from its origins at Google, and help you set up and manage your first cluster.
 
 
-.. image:: kubeadm/kubernetes.PNG
+.. image:: kubeadm/kubenetes.PNG
    :width: 800px
    :length: 400px
    :alt: alternate text
