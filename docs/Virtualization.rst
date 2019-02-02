@@ -78,7 +78,7 @@ Containerizing an application enables it to run reliably in different environmen
 The size of the containers is usually measured in tens of megabytes and it only takes 1–2 seconds to provision one. When the load is increasing new containers can be created and when the load drops containers can be destroyed. When containers need to be updated you only need to modify the configuration file and then create new containers and destroy the old ones.
 
 2.1 Virtual machines Vs Containers
-''''''''''''''''''''''''''''''''''''
+""""""""""""""""""""""""""""""""""""
 
 Both VMs and containers can be used to isolate applications from other applications running on the same host. VMs have an added degree of isolation from the hypervisor, where as containers are seemed to be itself as a process at the host OS point of view. The container engine is responsible for starting and stopping containers in a similar way to the hypervisor on a VM.
 Containers are created through Linux kernel features esp. **namespaces** and **cgroups**. 
