@@ -12,3 +12,9 @@ You will learn how to build apps in containers using docker and how to deploy th
 The course will help you learn components in the Kubernetes architecture and useful commands for deploying and managing a cluster.
 
 You will understand the open source orchestration system for container-based distributed applications. It will trace the history of Kubernetes from its origins at Google, and help you set up and manage your first cluster.
+
+
+.. image:: kubeadm/kubernetes.PNG
+   :width: 800px
+   :length: 400px
+   :alt: alternate text
