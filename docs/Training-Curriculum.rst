@@ -144,7 +144,7 @@ Week - II
 +         +-------------------------------------------------------------+             +
 |         | Kubernetes Components                                       |             |
 +         +                                                             +             +
-|         |  1) Control plance                                          |             |
+|         |  1) Control plane                                           |             |
 +         +                                                             +             +
 |         |      a) Kube api server                                     |             |
 +         +                                                             +             +
@@ -188,7 +188,7 @@ Week - II
 +         +                                                             +             +
 |         |  2) Kops                                                    |             |
 +         +-------------------------------------------------------------+             +
-|         | ASSIGNMENT(day -1)                                          |             |
+|         | ASSIGNMENT                                                  |             |
 +---------+-------------------------------------------------------------+-------------+
 | Day 2   | Kubernetes Cluster Setup - I                                | 4 Hrs       |
 +         +                                                             +             +
@@ -204,127 +204,105 @@ Week - II
 +         +                                                             +             +
 |         |          iv) Exposing a microservice                        |             |
 +         +                                                             +             +
-|         |          v) Accessing microservice internally and externally|             |
+|         |          v) Accessing microservice                          |             |
 +         +                                                             +             +
 |         |          vi) Establishing High availability                 |             |
 +         +                                                             +             +
-|         |      b) Performance testing on kube cluster                 |             |
+|         |          vii) Performance testing on kube cluster           |             |
 +         +                                                             +             +
-|         |          i) Smoke testing &Performance testing High         |             |
+|         |          viii) Smoke testing &Performance testing High      |             |
 +         +             availability                                    +             +
-|         |  2) Installer Mode  (multi master multi node)               |             |
-+         +                                                             +             +                                              
-|         |      a) Establishing architecture                           |             | 
-+         +                                                             +             +                                              
-|         |      b) Developing a microservice                           |             |
-+         +                                                             +             +                                              
-|         |      c) Deploying a microservice                            |             |
-+         +                                                             +             +                                              
-|         |      d) Exposing a microservice                             |             |
-+         +                                                             +             +                                              
-|         |      e) Accessing microservice internally and externally    |             |
-+         +                                                             +             +                                              
-|         |      f) Establishing High availability                      |             |
-+         +                                                             +             +                                              
-|         |      g) Smoke testing &Performance testing High availability|             |
+|         |                                                             |             |
++---------+-------------------------------------------------------------+-------------+
+| Day 3   |  Cloud Agnostic Installation (Installer Mode)               | 3 Hrs       |
 +         +-------------------------------------------------------------+             +                                              
-|         | ASSIGNMENT                                                  |             |
+|         |   1) KUBEADM                                                |             | 
++         +                                                             +             +                                              
+|         |      a) Overview                                            |             |
++         +                                                             +             +                                              
+|         |      b) Installation                                        |             |
++         +                                                             +             +                                              
+|         |      c) Validation                                          |             |
++         +                                                             +             +                                              
+|         |      e) Deployments                                         |             |
++         +                                                             +             +                                              
+|         |   2) KOPS                                                   |             |
++         +                                                             +             +                                              
+|         |      a) Overview                                            |             |
++         +                                                             +             + 
+|         |      b) Installtion                                         |             |
++         +                                                             +             + 
+|         |      c) Validation                                          |             |
++         +                                                             +             + 
+|         |      d) Deployments                                         |             |
++         +                                                             +             + 
+|         |      e) Accessing Services                                  |             |
++         +-------------------------------------------------------------+             +                                              
+|         |  ASSIGNMENT                                                 |             |
 +---------+-------------------------------------------------------------+-------------+
-| Day 3   | Kubernetes Cluster Setup - II                               | 4 hrs       |
+| Day 4   | Self Hosted Kubernetes Cluster                              | 4 hrs       |
 +         +                                                             +             +
-|         |  1) Self Hosted Mode                                        |             |
+|         |  1) Single Master Architecture                              |             |
 +         +                                                             +             +
-|         |      a) Establishing architecture                           |             |
+|         |     a) Installing the Client Tools                          |             |
 +         +                                                             +             +
-|         |      b) Developing a microservice                           |             |
+|         |     b) Provision the CA and Generating TLS Certificates     |             |
 +         +                                                             +             +
-|         |      c) Deploying a microservice                            |             |
+|         |     c) Generate Kubernetes Configuration Files for          |             |
+|         |        Authentication                                       |             |
 +         +                                                             +             +
-|         |      d) Exposing a microservice                             |             |
+|         |     d) Bootstrap the etcd Cluster                           |             |
 +         +                                                             +             +
-|         |      e) Accessing microservice internally and externally    |             |
+|         |     e) Bootstrap the Kubernetes Control Plane               |             |
 +         +                                                             +             +
-|         |      f) Establishing High availability                      |             |
+|         |     f) Bootstrap the Kubernetes Worker Node                 |             |
 +         +                                                             +             +
-|         |      g) Smoke testing &Performance testing High availability|             |
+|         |     g) Smoke Test                                           |             |
 +         +                                                             +             +
-|         |  2) Prod Mode                                               |             |
+|         |  2) Multi-Master – Multi node Architecture                  |             |
 +         +                                                             +             +
-|         |      a) Establishing architecture                           |             |
+|         |     a) Establishing architecture                            |             |
 +         +                                                             +             +
-|         |      b) Developing a microservice                           |             |
+|         |     b) Kubernetes Control plane components                  |             |
 +         +                                                             +             +
-|         |      c) Deploying a microservice                            |             |
+|         |     c) Kubernetes Worker  node                              |             |
 +         +                                                             +             +
-|         |      d) Exposing a microservice                             |             |
+|         |     d) Exposing a microservice                              |             |
 +         +                                                             +             +
-|         |      e) Accessing microservice internally and externally    |             |
-+         +                                                             +             +
-|         |      f) Establishing High availability                      |             |
-+         +                                                             +             +
-|         |      g) Smoke testing &Performance testing High availability|             |
+|         |     e) Smoke testing                                        |             |
 +         +-------------------------------------------------------------+             +
-|         | ASSINMENT                                                   |             |
+|         |   ASSINMENT                                                 |             |
 +---------+-------------------------------------------------------------+-------------+
-| Day 4   | Kubernetes Networking                                       | 4 hrs       |
+| Day 5   |  AKS –                                                      | 4 hrs       |
 +         +                                                             +             +
-|         | Advance concepts of K8s                                     |             |
+|         |    1) Introduction                                          |             |
 +         +                                                             +             +
-|         |      a) Job & scheduling pods                               |             |
+|         |    2) Azure Kubernetes Service                              |             |
 +         +                                                             +             +
-|         |           i) Job object                                     |             |
+|         |    3) Azure container Registry                              |             |
 +         +                                                             +             +
-|         |           ii) Job patterns                                  |             |
+|         |    4) Azure Kubernetes cluster setup                        |             |
 +         +                                                             +             +
-|         |           iii) Taints & Tolerations                         |             |
+|         |    5) Deployments to AKS                                    |             |
 +         +                                                             +             +
-|         |      b) Config map                                          |             |
-+         +                                                             +             +
-|         |      c) Ingress controller, reverse proxy                   |             |
-+         +                                                             +             +
-|         |      d) Persistent volume                                   |             |
-+         +                                                             +             +
-|         |      e) Storage class                                       |             |
-+         +                                                             +             +
-|         |      f) Stateless and stateful applications                 |             |
-+         +                                                             +             +
-|         |      g) Helm chart                                          |             |
-+         +                                                             +             +
-|         |      h) Logging and monitoring in kubernetes                |             |
-+         +                                                             +             +
-|         |      i) Taints and tolerations                              |             |
+|         |    6) Accessing AKS applications                            |             |
 +         +-------------------------------------------------------------+             +
-|         | Kubernetes Administration                                   |             |
+|         | EKS –                                                       |             | 
 +         +                                                             +             +
-|         |      a) RBAC                                                |             |
+|         |    1) Introduction                                          |             |
 +         +                                                             +             +
-|         |      b) Users and management                                |             |
+|         |    2) Amazon Web services                                   |             |
 +         +                                                             +             +
-|         |      c) Node Maintenance                                    |             |
+|         |    3) Elastic Kubernetes Service                            |             |
++         +                                                             +             +
+|         |    4) EKS Setup                                             |             |
++         +                                                             +             +
+|         |    5) Deployments to EKS                                    |             |
++         +                                                             +             +
+|         |    6) Accessing EKS applciations                            |             |
 +         +-------------------------------------------------------------+             +
-|         | Securing Kubernetes cluster  (Advanced)                     |             |
-+         +                                                             +             +
-|         |      a) Understanding authentication                        |             |
-+         +                                                             +             +
-|         |      b) What ServiceAccounts are and why they're used       |             |
-+         +                                                             +             +
-|         |      c) Understanding the role-based access control(RBAC)   |             |
-+         +         plugin                                              +             +
-|         |      d) Using Roles and RoleBindings                        |             |
-+         +                                                             +             +
-|         |      e) Using ClusterRoles and ClusterRoleBindings          |             |
-+         +                                                             +             +
-|         |      f) Understanding the default roles and bindings        |             |
-+         +-------------------------------------------------------------+             +
-|         | ASSIGNMENT                                                  |             |
+|         |   ASSIGNMENT                                                |             |
 +---------+-------------------------------------------------------------+-------------+
-| Day 5   | Kubernetes with devops                                      | 4 Hrs       |
-+         +-------------------------------------------------------------+             +
-|         | Openshift – on-premise                                      |             | 
-+         +-------------------------------------------------------------+             +
-|         | Pivotal CloudFoundry                                        |             |
-+         +-------------------------------------------------------------+             +
-|         | ASSIGNMENT                                                  |             |
-+---------+-------------------------------------------------------------+-------------+
+
 
 
