@@ -103,8 +103,10 @@ If you are already using port 5000, or you want to run multiple local registries
 
 .. code-block:: bash
 
-   $ docker run -d \ -p 5001:5000 \ 
-     --name registry-test \ registry:2
+   $ docker run -d \ 
+     -p 5001:5000 \ 
+     --name registry-test \ 
+     registry:2
 
 If you want to change the port the registry listens on within the container, you can use the environment variable REGISTRY_HTTP_ADDR to change it. This command causes the registry to listen on port 5001 within the container:
 
@@ -128,7 +130,8 @@ By default, your registry data is persisted as a docker volume (https://docs.doc
      -p 5000:5000 \ 
      --restart=always \ 
      --name registry \
-     -v /mnt/registry:/var/lib/registry \ registry:2
+     -v /mnt/registry:/var/lib/registry \
+     registry:2
 
 
 - Customize the storage back-end
@@ -167,18 +170,18 @@ Copy the .crt and .key files from the CA into the certs directory. The following
 
    $ docker container stop registry
 
-3. Restart the registry, directing it to use the TLS certiVcate. This command bind-mounts the certs/ directory into the container at /certs/ , and sets environment variables that tell the container where to Pnd the domain.crt and domain.key le. The registry runs on port 443, the default HTTPS port.
+3. Restart the registry, directing it to use the TLS certiVcate. This command bind-mounts the certs/ directory into the container at /certs/ , and sets environment variables that tell the container where to Pnd the domain.crt and domain.key file. The registry runs on port 443, the default HTTPS port.
 
 .. code-block:: bash
 
-$ docker run -d \
-  --restart=always \ --name registry \
-  -v `pwd`/certs:/certs \
-  -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
-  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \ 
-  -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
-  -p 443:443 \ 
-  registry:2
+  $ docker run -d \
+    --restart=always \ --name registry \
+    -v `pwd`/certs:/certs \
+    -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
+    -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \ 
+    -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
+    -p 443:443 \ 
+    registry:2
 
 4.Docker clients can now pull from and push to your registry using its external address. The following commands demonstrate this:
 
