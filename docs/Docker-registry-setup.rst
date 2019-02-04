@@ -195,13 +195,13 @@ Copy the .crt and .key files from the CA into the certs directory. The following
 USE AN INTERMEDIATE CERTIFICATE
 ---------------------------------
 
-A certiGcate issuer may supply you with an intermediate certi cate. In this case, you must concatenate your certi cate with the intermediate certicate to form a certiTcate bundle. You can do this using the cat command:
+A certiGcate issuer may supply you with an intermediate certi cate. In this case, you must concatenate your certi cate with the intermediate certificate to form a certiTcate bundle. You can do this using the cat command:
 
 .. code-block:: bash
 
    $ cat domain.crt intermediate-certificates.pem > certs/domain.crt
   
-You can use the certiGcate bundle just as you use the domain.crt le in the previous example.
+You can use the certiGcate bundle just as you use the domain.crt file in the previous example.
 
 Support for Let’s Encrypt
 --------------------------
@@ -315,7 +315,6 @@ The simplest way to achieve access restriction is through basic authentication (
 
    $ docker container stop registry
 
-
 3.Start the registry with basic authentication.
 
 .. code-block:: bash
@@ -423,17 +422,16 @@ Save and exit the	file.
 
 4.When you push images to the registries in the list, their non-distributable layers are pushed to the registry.
 
-
 .. code-block:: Warning
  
-   Non-distributable artifacts typically have restrictions on how and where they can be distributed and shared. Only use this feature to    push artifacts to private registries and ensure that you are in compliance with any terms that cover redistributing non-distributable    artifacts.
+   WARNING:Non-distributable artifacts typically have restrictions on how and where they can be distributed and shared. Only use this      feature to push artifacts to private registries and ensure that you are in compliance with any terms that cover redistributing non-      distributable artifacts.
 
 Next steps
 ----------
 
 - More special and advanced information is available in the following sections:
 - ConQguration reference (https://docs.docker.com/registry/con guration/)
-- Working with notiYcations (https://docs.docker.com/registry/notiGcations/)
+- Working with notiYcations (https://docs.docker.com/registry/notifications/)
 - Advanced “recipes” (https://docs.docker.com/registry/recipes/)
 - Registry API (https://docs.docker.com/registry/spec/api/)
 - Storage driver model (https://docs.docker.com/registry/storage-drivers/)
@@ -441,7 +439,7 @@ Next steps
 - registry (https://docs.docker.com/glossary/?term=registry),
 - on-prem (https://docs.docker.com/glossary/?term=on-prem), 
 - images (https://docs.docker.com/glossary/?term=images), 
-- tags (https://docs.docker.com/glossary/? term=tags), 
+- tags (https://docs.docker.com/glossary/?term=tags), 
 - repository (https://docs.docker.com/glossary/?term=repository), 
 - distribution (https://docs.docker.com/glossary/?term=distribution), 
 - deployment (https://docs.docker.com/glossary/?term=deployment)
