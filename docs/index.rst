@@ -40,6 +40,5 @@ At the end of this course, you will be able to:
    Intro-to-kubernetes
    Kubernetes-Cluster-Setup
    Cloud-Agnostic-Installation
-   Kubernetes-OnPremise
    Kubernetes-cluster-single-node
    AKS-EKS
