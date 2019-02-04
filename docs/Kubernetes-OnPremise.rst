@@ -1,6 +1,6 @@
-###############################
-Self-Hosted Kubernetes Cluster
-###############################
+########################################
+Day 11 - Self-Hosted Kubernetes Cluster
+########################################
 
 Self-Hosted Kubernetes cluster can be created provisioned with on-premise physical/virtual servers. The following section demonstrates creating kubernetes cluster and deploying applications in to the kubernetes cluster.
 
