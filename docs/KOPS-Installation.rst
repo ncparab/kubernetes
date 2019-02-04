@@ -1,6 +1,6 @@
-#######################
-KOPS Installation
-#######################
+#####
+KOPS 
+#####
 
 Cloud Agnostic Kubernetes Cluster setup:
 ----------------------------------------
