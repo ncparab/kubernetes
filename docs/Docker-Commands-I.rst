@@ -1,6 +1,6 @@
-####################
-Docker Commands - I
-####################
+############################
+Day 3 - Docker Commands - I
+############################
 
 
 Most widely used docker commands
