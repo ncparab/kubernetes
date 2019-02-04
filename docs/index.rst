@@ -35,6 +35,7 @@ At the end of this course, you will be able to:
    Docker-Commands-I
    Docker-Commands-II
    Dockerfile
+   Training-Curriculum-II
    Intro-to-kubernetes
    Kubernetes-Cluster-Setup
    Kubernetes-OnPremise
