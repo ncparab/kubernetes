@@ -90,9 +90,7 @@ The following sections provide basic guidelines for conKguring your registry. Fo
 Start the registry automatically
 '''''''''''''''''''''''''''''''''
 
-If you want to use the registry as part of your permanent infrastructure, you should set it to restart automatically when Docker restarts or if it exits. This example uses the
-
---restart always tag to set a restart policy for the registry.
+If you want to use the registry as part of your permanent infrastructure, you should set it to restart automatically when Docker restarts or if it exits. This example uses the --restart always tag to set a restart policy for the registry.
 
 .. code-block:: bash
 
@@ -113,9 +111,7 @@ If you want to change the port the registry listens on within the container, you
 .. code-block:: bash
 
    $ docker run -d \
-
      -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \ -p 5001:5001 \
-
      --name registry-test \ registry:2
 
 Storage customization
