@@ -2,8 +2,8 @@
 Day 12 - AKS & EKS 
 ###################
 
-AKS Introduction:
------------------
+AKS 
+----
 
 Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment, making it quick and easy to deploy and manage containerized 
 applications without container orchestration expertise. It also eliminates the burden of ongoing operations and maintenance by 
@@ -228,8 +228,8 @@ You can see the load balancer is created in the Azure Web Portal.
    :alt: alternate text
               
 
-EKS Introduction
------------------
+EKS
+----
 
 Amazon Container Service for Kubernetes(EKS):
 ==============================================
