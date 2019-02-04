@@ -39,8 +39,7 @@ At the end of this course, you will be able to:
    Docker-lab
    Intro-to-kubernetes
    Kubernetes-Cluster-Setup
-   KUBEADM-Installation
-   KOPS-Installation
+   Cloud-Agnostic-Installation
    Kubernetes-OnPremise
    Kubernetes-cluster-single-node
    AKS-EKS
