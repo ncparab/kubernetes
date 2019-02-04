@@ -34,9 +34,13 @@ At the end of this course, you will be able to:
    Docker
    Docker-Commands-I
    Docker-Commands-II
+   Docker-registry-setup
    Dockerfile
+   Docker-lab
    Intro-to-kubernetes
    Kubernetes-Cluster-Setup
-   Kubernetes-OnPremise
-   KOPS-Installation
    KUBEADM-Installation
+   KOPS-Installation
+   Kubernetes-OnPremise
+   Kubernetes-cluster-single-node
+   AKS-EKS
