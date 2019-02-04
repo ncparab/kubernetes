@@ -430,7 +430,7 @@ Next steps
 ----------
 
 - More special and advanced information is available in the following sections:
-- ConQguration reference (https://docs.docker.com/registry/con guration/)
+- Configuration reference (https://docs.docker.com/registry/configuration/)
 - Working with notiYcations (https://docs.docker.com/registry/notifications/)
 - Advanced “recipes” (https://docs.docker.com/registry/recipes/)
 - Registry API (https://docs.docker.com/registry/spec/api/)
