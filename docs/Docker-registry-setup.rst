@@ -294,8 +294,9 @@ Native basic auth
 
 The simplest way to achieve access restriction is through basic authentication (this is very similar to other web servers’ basic authentication mechanism). This example uses native basic authentication using htpasswd to store the secrets.
 
+.. code-block:: warning
 
-**Warning:** You cannot use authentication with authentication schemes that send credentials as clear text. You must conQgure TLS Trst (https://docs.docker.com/registry/deploying/#running-a-domain-registry) for authentication to work.
+   You cannot use authentication with authentication schemes that send credentials as clear text. You must conQgure TLS Trst                (https://docs.docker.com/registry/deploying/#running-a-domain-registry) for authentication to work.
 
 1. Create a password	le with one entry for the user  testuser , with password 
    testpassword :
@@ -348,7 +349,7 @@ Test that you can now pull an image from the registry or push an image to the re
 
 .. code-block:: error
 
-   **X509 errors:** X509 errors usually indicate that you are attempting to use a self-signed certiTcate without con guring the Docker daemon correctly. See run an insecure registry (https://docs.docker.com/registry/insecure/).
+   X509 errors: X509 errors usually indicate that you are attempting to use a self-signed certiTcate without con guring the Docker          daemon correctly. See run an insecure registry (https://docs.docker.com/registry/insecure/).
 
 More advanced authentication
 '''''''''''''''''''''''''''''
@@ -423,7 +424,9 @@ Save and exit the	file.
 4.When you push images to the registries in the list, their non-distributable layers are pushed to the registry.
 
 
-**Warning:** Non-distributable artifacts typically have restrictions on how and where they can be distributed and shared. Only use this feature to push artifacts to private registries and ensure that you are in compliance with any terms that cover redistributing non-distributable artifacts.
+.. code-block:: Warning
+ 
+   Non-distributable artifacts typically have restrictions on how and where they can be distributed and shared. Only use this feature to    push artifacts to private registries and ensure that you are in compliance with any terms that cover redistributing non-distributable    artifacts.
 
 Next steps
 ----------
@@ -435,104 +438,11 @@ Next steps
 - Registry API (https://docs.docker.com/registry/spec/api/)
 - Storage driver model (https://docs.docker.com/registry/storage-drivers/)
 - Token authentication (https://docs.docker.com/registry/spec/auth/token/)
+- registry (https://docs.docker.com/glossary/?term=registry),
+- on-prem (https://docs.docker.com/glossary/?term=on-prem), 
+- images (https://docs.docker.com/glossary/?term=images), 
+- tags (https://docs.docker.com/glossary/? term=tags), 
+- repository (https://docs.docker.com/glossary/?term=repository), 
+- distribution (https://docs.docker.com/glossary/?term=distribution), 
+- deployment (https://docs.docker.com/glossary/?term=deployment)
 
-registry (https://docs.docker.com/glossary/?term=registry),
-
-on-prem (https://docs.docker.com/glossary/?term=on-prem), 
-
-images (https://docs.docker.com/glossary/?term=images), 
-
-tags (https://docs.docker.com/glossary/? term=tags), 
-
-repository (https://docs.docker.com/glossary/?term=repository), 
-
-distribution (https://docs.docker.com/glossary/?term=distribution), 
-
-deployment (https://docs.docker.com/glossary/?term=deployment)
-
-
-
-
-
-
-
-
-https://docs.docker.com/registry/deploying/#stop-a-local-registry	12/13
-
-11/15/2018	Deploy a registry server | Docker Documentation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://docs.docker.com/registry/deploying/#stop-a-local-registry	13/13
