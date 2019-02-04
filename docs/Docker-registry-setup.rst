@@ -111,20 +111,23 @@ If you want to change the port the registry listens on within the container, you
 .. code-block:: bash
 
    $ docker run -d \
-     -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \ -p 5001:5001 \
-     --name registry-test \ registry:2
+     -e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \ 
+     -p 5001:5001 \
+     --name registry-test \ 
+     registry:2
 
 Storage customization
 '''''''''''''''''''''''
-
 - Customize the storage location
 
 By default, your registry data is persisted as a docker volume (https://docs.docker.com/engine/tutorials/dockervolumes/) on the host Glesystem. If you want to store your registry contents at a speciUc location on your host lesystem, such as if you have an SSD or SAN mounted into a particular directory, you might decide to use a bind mount instead. A bind mount is more dependent on the Vlesystem layout of the Docker host, but more performant in many situations. The following example bind-mounts the host directory /mnt/registry into the registry container at /var/lib/registry/ .
 
 .. code-block:: bash
 
-   $ docker run -d \ -p 5000:5000 \ --restart=always \ --name registry \
-
+   $ docker run -d \ 
+     -p 5000:5000 \ 
+     --restart=always \ 
+     --name registry \
      -v /mnt/registry:/var/lib/registry \ registry:2
 
 
@@ -172,8 +175,10 @@ $ docker run -d \
   --restart=always \ --name registry \
   -v `pwd`/certs:/certs \
   -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
-  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \ -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
-  -p 443:443 \ registry:2
+  -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \ 
+  -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
+  -p 443:443 \ 
+  registry:2
 
 4.Docker clients can now pull from and push to your registry using its external address. The following commands demonstrate this:
 
@@ -239,11 +244,18 @@ By default, secrets are mounted into a service at  /run/secrets/<secret-name> .
 
 .. code-block:: bash
 
-   $ docker service create \ --name registry \ --secret domain.crt \ --secret domain.key \
+   $ docker service create \ 
+     --name registry \ 
+     --secret domain.crt \ 
+     --secret domain.key \
      --constraint 'node.labels.registry==true' \
-     --mount type=bind,src=/mnt/registry,dst=/var/lib/registry \ -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
-     -e REGISTRY_HTTP_TLS_CERTIFICATE=/run/secrets/domain.crt \ -e REGISTRY_HTTP_TLS_KEY=/run/secrets/domain.key \ --publish published=443,target=443 \
-     --replicas 1 \ registry:2
+     --mount type=bind,src=/mnt/registry,dst=/var/lib/registry \ 
+     -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
+     -e REGISTRY_HTTP_TLS_CERTIFICATE=/run/secrets/domain.crt \ 
+     -e REGISTRY_HTTP_TLS_KEY=/run/secrets/domain.key \
+     --publish published=443,target=443 \
+     --replicas 1 \ 
+     registry:2
 
 You can access the service on port 443 of any swarm node. Docker sends the requests to the node which is running the service.
 
@@ -304,11 +316,18 @@ The simplest way to achieve access restriction is through basic authentication (
 
 .. code-block:: bash
 
-   $ docker run -d \ -p 5000:5000 \ --restart=always \ --name registry \
-    -v `pwd`/auth:/auth \
-    -e "REGISTRY_AUTH=htpasswd" \
-    -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \ -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \ -v `pwd`/certs:/certs \
-    -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \ -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \ registry:2
+   $ docker run -d \ 
+     -p 5000:5000 \ 
+     --restart=always \ 
+     --name registry \
+     -v `pwd`/auth:/auth \
+     -e "REGISTRY_AUTH=htpasswd" \
+     -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \ 
+     -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \ 
+     -v `pwd`/certs:/certs \
+     -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \
+     -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \ 
+     registry:2
 
 
 4.Try to pull an image from the registry, or push an image to the registry. These commands fail.
@@ -360,7 +379,7 @@ example	as a template.(docker-compose.yml)
      -/path/certs:/certs  
      -/path/auth:/auth
 
-Replace  /path  with the directory which contains the  certs/  and  auth/  directories.
+Replace  /path  with the directory which contains the  `certs/`  and  `auth/`  directories.
 
 Start your registry by issuing the following command in the directory containing the
 
@@ -414,22 +433,19 @@ Next steps
 - Storage driver model (https://docs.docker.com/registry/storage-drivers/)
 - Token authentication (https://docs.docker.com/registry/spec/auth/token/)
 
-registry 
----------
+registry (https://docs.docker.com/glossary/?term=registry),
 
-(https://docs.docker.com/glossary/?term=registry), on-prem 
+on-prem (https://docs.docker.com/glossary/?term=on-prem), 
 
-(https://docs.docker.com/glossary/?term=on-prem), images 
+images (https://docs.docker.com/glossary/?term=images), 
 
-(https://docs.docker.com/glossary/?term=images), tags 
+tags (https://docs.docker.com/glossary/? term=tags), 
 
-(https://docs.docker.com/glossary/? term=tags), repository 
+repository (https://docs.docker.com/glossary/?term=repository), 
 
-(https://docs.docker.com/glossary/?term=repository), distribution 
+distribution (https://docs.docker.com/glossary/?term=distribution), 
 
-(https://docs.docker.com/glossary/?term=distribution), deployment 
-
-(https://docs.docker.com/glossary/?term=deployment)
+deployment (https://docs.docker.com/glossary/?term=deployment)
 
 
 
