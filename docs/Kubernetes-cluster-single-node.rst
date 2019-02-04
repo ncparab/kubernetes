@@ -1,12 +1,15 @@
 ###############################################
-Kubernetes Cluster (Single Master multi-node)
+Day 11 - Self-Hosted Kubernetes Cluster
 ###############################################
 
+
+Single Master multi-node
+--------------------------
 Kubernetes requires a set of machines to host the Kubernetes control plane and the worker nodes where containers are ultimately run.
 In this section we demonstrate setting up single master multi worker node configuration for the Kubernetes Cluster.
 
 Prerequisites:
----------------
+===============
 
 Ensure the following ports are open on the instances:
 
@@ -40,7 +43,7 @@ The compute resources can be Bare metal servers or virtual machines. Series of s
 - Smoke Test
 
 Client Tools:
--------------
+==============
 
 - Install cfssl and kubectl tools on your machine.
 
@@ -326,7 +329,7 @@ You will see the following files generated executing the above code:
 - kube-proxy.pem
 
 The Scheduler Client Certificate
----------------------------------
+==================================
 
 Generate the kube-scheduler client certificate and private key:
 
@@ -481,7 +484,6 @@ for instance in W1 W2; do
    
 done
 
-
 Generating Kubernetes Configuration Files for Authentication
 
 - Client Authentication Configs:
@@ -608,6 +610,7 @@ Generate a kubeconfig file for the kube-scheduler service:
 
     kubectl config use-context default --kubeconfig=kube-scheduler.kubeconfig
     }
+    
 Results:
 ''''''''''
 
@@ -643,13 +646,13 @@ Generate a kubeconfig file for the admin user:
 **admin.kubeconfig** will be gnereated at this point.
 
 Distribute the Kubernetes Configuration Files
-----------------------------------------------
+==============================================
 
 Distribute Kubeconfig pertaining to that worker node and kube-proxy.kubeconfig to all of the worker nodes.
 admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig should be on the control node.
 
 Bootstrap the etcd cluster(on control node)
---------------------------------------------
+============================================
 
 On the Control node, Download the official etcd release binaries :
 
@@ -742,7 +745,7 @@ Create the etcd.service systemd unit file:
 
 
 KUBERNETES COMPONENTS 
-----------------------
+======================
 
 The Kubernetes components that make up the control plane include the following components:
 
@@ -779,7 +782,6 @@ Each component is being run on the same machine in this case etcd too.
 
 - Configure the Kubernetes API Server
 
-
 .. code-block:: bash
 
    {
@@ -811,7 +813,7 @@ Each component is being run on the same machine in this case etcd too.
      --authorization-mode=Node,RBAC \\
      --bind-address=0.0.0.0 \\
      --client-ca-file=/var/lib/kubernetes/ca.pem \\
-     --enable-admission-plugins=Initializers,NamespaceLifecycle,NodeRestriction,LimitRanger,ServiceAccount,DefaultStorageClass,ResourceQuota \\
+     --enable-admission-                plugins=Initializers,NamespaceLifecycle,NodeRestriction,LimitRanger,ServiceAccount,DefaultStorageClass,ResourceQuota \\
      --enable-swagger-ui=true \\
      --etcd-cafile=/var/lib/kubernetes/ca.pem \\
      --etcd-certfile=/var/lib/kubernetes/kubernetes.pem \\
@@ -974,8 +976,6 @@ ON EACH WORKER:
 Docker : Docker is a container runtime engine that Kubernetes should be compatible with the Docker 1.9.x - 1.11.x:. We can alternatively 
 use containerd or other container runtimes. We showcased using Docker.
 
-
-
 - Install Binaries:
 
 .. code-block:: bash
@@ -1080,8 +1080,6 @@ For example on W1:
 
    $ sudo mv kube-proxy.kubeconfig /var/lib/kube-proxy/kubeconfig
 
-
-
 - Create the kube-proxy-config.yaml configuration file:
 
 .. code-block:: bash
@@ -1171,8 +1169,8 @@ Now, Create secrets if planning to use DockerHub as image repository so that Kub
 
    $ kubectl create secret docker-registry myregistrykey --docker-server=DOCKER_REGISTRY_SERVER --docker-username=DOCKER_USER --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL
 
-Smoke Test the cluster:
-------------------------
+Smoke Testing
+--------------
 
 - Testing the Deployment:
 
