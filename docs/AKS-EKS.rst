@@ -313,7 +313,7 @@ Provide the configuration for creating EKS cluster:
 
 .. image:: kubeadm/eks8.PNG
    :width: 800px
-   :height: 200px
+   :height: 300px
    :alt: alternate text
    
 .. image:: kubeadm/eks9.PNG
@@ -323,12 +323,12 @@ Provide the configuration for creating EKS cluster:
                              
 .. image:: kubeadm/eks10.PNG
    :width: 800px
-   :height: 200px
+   :height: 300px
    :alt: alternate text
 
 .. image:: kubeadm/eks11.PNG
    :width: 800px
-   :height: 200px
+   :height: 300px
    :alt: alternate text
 
 Alternatively you can Create cluster using AWS Cli- 
