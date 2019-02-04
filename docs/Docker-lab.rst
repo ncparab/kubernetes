@@ -1,6 +1,6 @@
-####################
-Docker lab exercise
-####################
+############################
+Day 7 - Docker lab exercise
+############################
 
 - Setup docker automic component environment
 - Setup docker combined component environement
