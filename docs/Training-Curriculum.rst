@@ -2,8 +2,8 @@
 Training
 ##########
 
-Curriculum - I
----------------
+Curriculum 
+-----------
 
 Week - I
 '''''''''
