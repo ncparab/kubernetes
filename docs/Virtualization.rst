@@ -1,6 +1,6 @@
-###############
-Virtualization
-###############
+#######################
+Day 1 - Virtualization
+#######################
 
 1. Introduction to Virtualization
 ----------------------------------
